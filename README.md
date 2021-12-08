@@ -27,6 +27,16 @@ CORS träder in i följande fall
 * Icke-enkla requests startar en mekanism som kallas *preflight*
 * Exempel på icke-enkla requests är...
   * requests som inkluderar cookies
-  * ```Content-type``` som inte är ```application/x-ww-form-urlencoded```, ```multipart/form-data``` eller ```text-plain````
-* *preflight* sänder en ``ÒPTOPNS``` request till servern
+  * ```Content-type``` som inte är ```application/x-ww-form-urlencoded```, ```multipart/form-data``` eller ```text-plain```
+* *preflight* sänder en ```OPTIONS``` request till servern och får response
 * I figur 1 har preflight inhämtat response men får inte tillgång till resultatet
+
+## Lösning
+
+### 1 - Tillgång till client- och server kod
+
+* Ange en vitlista i ```Access-Control-Allow-Origin``` headern på servern
+
+### 2 - Tillgång till client kod med inte server kod
+
+* Använd proxyserver
