@@ -28,7 +28,7 @@ Javascript XMLHttpRequest eller Fetch genererar en ```HTTP GET```
 
 | ![cors-fail3.png](images/cors-fail3.png) |
 |:--:|
-| fig 1. CORS error meddelande |
+| fig 1. CORS genomför en preflight med HTTP OPTION metoden |
 
 2. Om villkoren uppfylls för godkänd preflight så genomförs en ```HTTP GET``` i ett andra steg
 3. Javascript får tillgång till responsen. Se bild 3
