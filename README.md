@@ -25,12 +25,13 @@ CORS träder in i följande fall
 Javascript XMLHttpRequest eller Fetch genererar en ```HTTP GET```
 
 1. Webbläsarens CORS mekanism bryter in och gör en "test request" (preflight) med ```HTTP OPTION``` metoden
-2. Om villkoren uppfylls för godkänd preflight så genomförs en ```HTTP GET``` i ett andra steg
-3. Javascript får tillgång till responsen. Se bild 3
 
 | ![cors-fail3.png](images/cors-fail3.png) |
 |:--:|
 | fig 1. CORS error meddelande |
+
+2. Om villkoren uppfylls för godkänd preflight så genomförs en ```HTTP GET``` i ett andra steg
+3. Javascript får tillgång till responsen. Se bild 3
 
 ## preflight
 
