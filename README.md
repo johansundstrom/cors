@@ -20,16 +20,18 @@ CORS träder in i följande fall
 
 ## Bakom skynket
 
-* Response kommer fram men webbläsaren ger inte JavaScript tillstånd att nå responsen
+Javascript XMLHttpRequest eller Fetch genererar en ```HTTP GET```
 
-### preflight
+1. Webbläsarens CORS mekanism bryter in och gör en request (preflight) med ```HTTP OPTION``` metoden
+2. Om villkoren uppfylls för godkänd preflight så genomförs en ```HTTP GET``` i ett andra steg
+3. Javascript får tillgång till responsen
 
-* Icke-enkla requests startar en mekanism som kallas *preflight*
+## preflight
+
+* Icke-enkla HTTP requests startar en mekanism som kallas *preflight*
 * Exempel på icke-enkla requests är...
   * requests som inkluderar cookies
   * ```Content-type``` som inte är ```application/x-ww-form-urlencoded```, ```multipart/form-data``` eller ```text-plain```
-* *preflight* sänder en ```OPTIONS``` request till servern och får response
-* I figur 1 har preflight inhämtat response men får inte tillgång till resultatet
 
 ## Lösning
 
@@ -37,6 +39,10 @@ CORS träder in i följande fall
 
 * Ange en vitlista i ```Access-Control-Allow-Origin``` headern på servern
 
-### 2 - Tillgång till client kod med inte server kod
+### 2 - Temporär lösning
+
+* Genom en plug-in i webbläsaren kan man sätta CORS ur spel
+
+### 3 - Tillgång till client kod med inte server kod
 
 * Använd proxyserver
