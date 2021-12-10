@@ -2,7 +2,7 @@
 
 ## Bakgrund
 
-| ![cors-fail.png]images/cors-fail.png"> |
+| ![cors-fail.png]images/cors-fail.png> |
 |:--:|
 | fig 1 |
 
