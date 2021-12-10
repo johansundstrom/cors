@@ -39,7 +39,7 @@ Javascript XMLHttpRequest eller Fetch genererar en ```HTTP GET```
 
 ### 1 - Tillgång till client- och server kod
 
-* Ange en vitlista i ```Access-Control-Allow-Origin``` headern på servern
+* Ange en vitlista i ```Access-Control-Allow-Origin``` headern på servern ```'*'``` tillåter alla
 
 ### 2 - Temporär lösning
 
