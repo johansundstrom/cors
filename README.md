@@ -1,3 +1,4 @@
+# SOP - Same Origin Policy
 # CORS - Cross-Origin Resource Sharing
 
 ## Bakgrund
