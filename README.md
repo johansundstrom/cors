@@ -1,5 +1,8 @@
 # SOP - Same Origin Policy
-# CORS - Cross-Origin Resource Sharing
+
+När ett javascript läser från en sajt och ska publicera i annan.
+
+## CORS - Cross-Origin Resource Sharing
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/johansundstrom/web?style=plastic)
 <img src="https://img.shields.io/badge/Status-Finished-brightgreen">
