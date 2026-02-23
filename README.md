@@ -1,4 +1,6 @@
-# SOP - Same Origin Policy
+# Cross-Origin Resource Sharing
+
+## SOP - Same Origin Policy
 
 När ett javascript läser från en sajt och ska publicera i annan.
 
